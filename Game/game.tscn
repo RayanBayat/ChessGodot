@@ -1,0 +1,12 @@
+[gd_scene load_steps=4 format=3 uid="uid://o87m1pnsxj8j"]
+
+[ext_resource type="Script" path="res://Game/game.cs" id="1_a3vun"]
+[ext_resource type="PackedScene" uid="uid://dyxg42l2xldvy" path="res://Board/Board.tscn" id="1_mn1c1"]
+[ext_resource type="PackedScene" uid="uid://bkh0bhv3o4d03" path="res://Pieces/pieces.tscn" id="3_fdvo8"]
+
+[node name="game" type="Node2D"]
+script = ExtResource("1_a3vun")
+
+[node name="Board" parent="." instance=ExtResource("1_mn1c1")]
+
+[node name="Pieces" parent="." instance=ExtResource("3_fdvo8")]

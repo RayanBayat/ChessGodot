@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://27e4w2xw1moh"]
+
+[ext_resource type="Texture2D" uid="uid://8efhr15n3jld" path="res://Asset/b_queen.png" id="1_4tc1c"]
+
+[node name="BQueen" type="Sprite2D"]
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("1_4tc1c")

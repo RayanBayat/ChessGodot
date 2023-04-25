@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://8h2k8xqtos5x"]
+
+[ext_resource type="Texture2D" uid="uid://b18l1mtwkuqay" path="res://Asset/w_bishop.png" id="1_3slvk"]
+
+[node name="WBishop" type="Sprite2D"]
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("1_3slvk")

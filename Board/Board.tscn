@@ -1,0 +1,39 @@
+[gd_scene load_steps=11 format=3 uid="uid://dyxg42l2xldvy"]
+
+[ext_resource type="Texture2D" uid="uid://wu0g1k8yiqnk" path="res://Asset/square brown dark_2x.png" id="1_3sbyy"]
+[ext_resource type="Texture2D" uid="uid://dlxuyasq3ay1c" path="res://Asset/square brown light_2x.png" id="2_kie08"]
+[ext_resource type="Texture2D" uid="uid://b2c2rxtbmu3sb" path="res://Asset/square gray dark _2x.png" id="3_7sxst"]
+[ext_resource type="Texture2D" uid="uid://bjsslnxrsol0p" path="res://Asset/square gray light _2x.png" id="4_y7ei5"]
+[ext_resource type="Script" path="res://Board/Board.cs" id="5_bk3ou"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_d0s6j"]
+texture = ExtResource("1_3sbyy")
+0:0/0 = 0
+1:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_eekdw"]
+texture = ExtResource("2_kie08")
+separation = Vector2i(10, 10)
+0:0/0 = 0
+1:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8qwra"]
+texture = ExtResource("3_7sxst")
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_u3b1n"]
+texture = ExtResource("4_y7ei5")
+
+[sub_resource type="TileSet" id="TileSet_xq2oh"]
+sources/0 = SubResource("TileSetAtlasSource_d0s6j")
+sources/1 = SubResource("TileSetAtlasSource_eekdw")
+sources/2 = SubResource("TileSetAtlasSource_8qwra")
+sources/3 = SubResource("TileSetAtlasSource_u3b1n")
+
+[node name="TileMap" type="TileMap"]
+scale = Vector2(3.125, 3.125)
+tile_set = SubResource("TileSet_xq2oh")
+cell_quadrant_size = 1
+format = 2
+layer_0/tile_data = PackedInt32Array(0, 65537, 1, 2, 65537, 1, 4, 65537, 1, 6, 65537, 1, 65537, 65537, 1, 65539, 65537, 1, 65541, 65537, 1, 65543, 65537, 1, 131072, 65537, 1, 131074, 65537, 1, 131076, 65537, 1, 131078, 65537, 1, 196609, 65537, 1, 196611, 65537, 1, 196613, 65537, 1, 196615, 65537, 1, 262144, 65537, 1, 262146, 65537, 1, 262148, 65537, 1, 262150, 65537, 1, 327681, 65537, 1, 327683, 65537, 1, 327685, 65537, 1, 327687, 65537, 1, 393216, 65537, 1, 393218, 65537, 1, 393220, 65537, 1, 393222, 65537, 1, 1, 65536, 1, 3, 65536, 1, 5, 65536, 1, 7, 65536, 1, 65536, 65536, 1, 65538, 65536, 1, 65540, 65536, 1, 65542, 65536, 1, 131073, 65536, 1, 131075, 65536, 1, 131077, 65536, 1, 131079, 65536, 1, 196608, 65536, 1, 196610, 65536, 1, 196612, 65536, 1, 196614, 65536, 1, 262145, 65536, 1, 262147, 65536, 1, 262149, 65536, 1, 262151, 65536, 1, 327680, 65536, 1, 327682, 65536, 1, 327684, 65536, 1, 327686, 65536, 1, 393217, 65536, 1, 393219, 65536, 1, 393221, 65536, 1, 393223, 65536, 1, 458752, 65536, 1, 458754, 65536, 1, 458756, 65536, 1, 458758, 65536, 1, 458753, 65537, 1, 458755, 65537, 1, 458757, 65537, 1, 458759, 65537, 1)
+script = ExtResource("5_bk3ou")

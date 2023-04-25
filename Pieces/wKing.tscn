@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://yjp1fbdubmkq"]
+
+[ext_resource type="Texture2D" uid="uid://drkt1pkqdlrue" path="res://Asset/w_king.png" id="1_ty31y"]
+
+[node name="WKing" type="Sprite2D"]
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("1_ty31y")

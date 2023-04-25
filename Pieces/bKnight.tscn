@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://dscth3e4k4ojl"]
+
+[ext_resource type="Texture2D" uid="uid://bookgnl5u01l8" path="res://Asset/b_knight.png" id="1_5wlvv"]
+
+[node name="BKnight" type="Sprite2D"]
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("1_5wlvv")

@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://cknf45blwcamo"]
+
+[ext_resource type="Texture2D" uid="uid://dpr5wm30u57ku" path="res://Asset/b_pawn.png" id="1_5mmcb"]
+
+[node name="BPawn" type="Sprite2D"]
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("1_5mmcb")
