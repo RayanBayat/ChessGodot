@@ -13,14 +13,7 @@ public partial class game : Node2D
 		
 		board = GetNode<Board>("Board");
 		setUp();
-		// makeMove("d7c8");
 		
-		// if (event.Pressed)
-		// 	{
-		// 		// Mouse Held
-		// 		mouse_offset = Position - GetGlobalMousePosition();
-		// 		selected = true;
-		// 	}
 	}
 
 	public override void _Input(InputEvent @event)
@@ -33,6 +26,7 @@ public partial class game : Node2D
 
 		// Print the size of the viewport.
 		GD.Print("Viewport Resolution is: ", GetViewportRect().Size);
+		
 	}
 	public void setUp()
 	{

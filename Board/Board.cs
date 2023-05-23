@@ -27,7 +27,7 @@ public partial class Board : TileMap
 
             X += TileSize;
             
-			// GD.Print("square " + i + "position " + coordinate.X + " " + coordinate.Y);
+			 GD.Print("square " + ((i-1) * 8 + j ) + "position " + coordinate.X + " " + coordinate.Y);
 			}
 			Y += TileSize;
 			X = InitialX;
